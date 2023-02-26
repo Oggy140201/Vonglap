@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cộng Trừ Nhân Chia</title>
+</head>
+<body>
+<table>
+    <tr>
+    <td colspan="4">
+        <input type="number" id="mot">
+        <input type="number" id="hai">
+    </td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td><button type="button" id="Cong" onclick="Cong();">cong(+)</button> </td>
+        <td><button type="button" id="Tru" onclick="Tru();">tru(+)</button> </td>
+        <td><button type="button" id="Nhan" onclick="Nhan();">nhan(+)</button> </td>
+        <td><button type="button" id="Chia" onclick="Chia();">chia(+)</button> </td>
+    </tr>
+</table>
+<p id="ketqua"></p>
+<script>
+    function cong(){
+        let a = document.getElementById('mot').value;
+        let b = document.getElementById('hai').value;
+        let c;
+        c = Number(a) + Number(b);
+        document.getElementById('ketqua').innerHTML = "Ket Qua = " + c;
+        // document.write(c);
+    }
+    cong
+
+    function tru(){
+        let a = document.getElementById('mot').value;
+        let b = document.getElementById('hai').value;
+        let d;
+        d = Number(a) - Number(b);
+        document.getElementById('Ketqua').innerHTML = "Ket Qua = " + d;
+    }
+    tru
+    function nhan(){
+        let a = document.getElementById('mot').value;
+        let b = document.getElementById('hai').value;
+        let e;
+        e = Number(a) * Number(b);
+        document.getElementById('Ketqua').innerHTML = ("Ket Qua = " + e);
+    }
+    nhan()
+    function chia() {
+        let a = document.getElementById('mot').value;
+        let b = document.getElementById('hai').value;
+        let f;
+        f = Number(a) / Number(b);
+        document.getElementById('Ketqua').innerHTML = ("Ket Qua = " + f);
+    }
+    chia
+</script>
+</body>
+</html>

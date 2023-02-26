@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="mot"></td>
+            <td>
+            <select id="a">
+                <option value="1">VietNam</option>
+                <option value="2">USD</option>
+            </select>
+            </td>
+            <td>
+                <select id="b">
+                    <option value="3">VietNam</option>
+                    <option value="4">USD</option>
+                </select>
+            </td>
+            <td> <button onclick="PHIMSEX()">Convert</button></td>
+        </tr>
+    </table>
+</form>
+<p id="YUMIFUKUDA" ></p>
+<script>
+    function PHIMSEX() {
+        let VLXX =+document.getElementById("mot").value;
+        let XNXX =document.getElementById("a").value;
+        let SEX =document.getElementById("b").value;
+        if (XNXX=="1"&&SEX=="4"){
+            let TOKUDA=VLXX*23;
+            document.getElementById("YUMIFUKUDA").innerHTML;
+            alert(TOKUDA);
+        }else if (XNXX=="2"&&SEX=="3"){
+            let DUNGTRAN=VLXX/23;
+            document.getElementById("YUMIFUKUDA").innerHTML;
+            alert(DUNGTRAN);
+        }
+    }
+
+</script>
+</body>
+</html>
